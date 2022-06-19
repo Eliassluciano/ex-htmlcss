@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* Seletores personalizados
+           # = id
+           . = class
+           : = pseudo-class
+           :: = pseudo element
+           > = clildrem filho */
+        a {
+            color: red;
+            text-decoration: none;  /* tira o sublinhado */
+            font-weight: bolder;    /* em negrito */
+        }
+
+        a:visited {   /* quando visitado fica red */
+            color: brown;
+        }
+
+        a:hover {    /* quando passar o mouse em cima fica sublinhado e preto */
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {   /* linl ativo quando for clicado fica yellow */
+            color: yellow;
+        }
+            /* antes */
+        .especial::before {
+            content: '→'
+        }     
+        
+             /* after depois */
+        .especial::after {    
+            content: '←';
+            /*  content: "[link]";/* pseudo elemento -- depois de todos os links vai avisar que é um link */    
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="http://gustavoguanabara.github.io" target="_blank">Repositório github</a></li>
+        <li><a href="http://youtube.com/cursoemvideo" class="especial" target="_blank">Canal Youtube</a></li> <!-- par que só esse sejá importante deve criar uma class- especial-->
+        <li><a href="http://www.cursoemvideo.com" target="_blank">Site do Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>
