@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: yellow
+        }
+        tbody > tr:nth-child(even){
+            background-color: blue
+        }
+        /* tbody > tr:nth-child(2n){ ou odd impar ou even par
+            background-color: lightgray;
+        } */
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia para tabelas grandes
+    caption
+    thead
+     tr, tD, th
+     tbody
+     tr, tD, th
+     thead
+     tr, tD, th
+     -->
+    <table>
+        <caption>População das Unidades Federais</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <th>São Paulo</th>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">10.000.000</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>53.000.000</strong></td>
+            </tr>
+        </thead>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem vero suscipit fugit quisquam recusandae quae, br br necessitatibus dolorum dignissimos nisi! Eum modi iure iusto aliquid facilis nobis maxime officia quo. <br>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem nobis ad dolore adipisci doloribus molestiae numquam qui debitis exercitationem reprehenderit voluptas, alias magnam maiores tempora cum. Sequi, nostrum aut? <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, adipisci quae quia illum voluptatum accusamus tempore non velit odio cum? Fugit tenetur repellendus eum, quis ullam vero sunt. Nihil.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem vero suscipit fugit quisquam recusandae quae, br br necessitatibus dolorum dignissimos nisi! Eum modi iure iusto aliquid facilis nobis maxime officia quo. <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem nobis ad dolore adipisci doloribus molestiae numquam qui debitis exercitationem reprehenderit voluptas, alias magnam maiores tempora cum. Sequi, nostrum aut? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, adipisci quae quia illum voluptatum accusamus tempore non velit odio cum? Fugit tenetur repellendus eum, quis ullam vero sunt. Nihil.
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem vero suscipit fugit quisquam recusandae quae, br br necessitatibus dolorum dignissimos nisi! Eum modi iure iusto aliquid facilis nobis maxime officia quo. <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem nobis ad dolore adipisci doloribus molestiae numquam qui debitis exercitationem reprehenderit voluptas, alias magnam maiores tempora cum. Sequi, nostrum aut? <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, adipisci quae quia illum voluptatum accusamus tempore non velit odio cum? Fugit tenetur repellendus eum, quis ullam vero sunt. Nihil.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem vero suscipit fugit quisquam recusandae quae, br br necessitatibus dolorum dignissimos nisi! Eum modi iure iusto aliquid facilis nobis maxime officia quo. <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem nobis ad dolore adipisci doloribus molestiae numquam qui debitis exercitationem reprehenderit voluptas, alias magnam maiores tempora cum. Sequi, nostrum aut? <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, adipisci quae quia illum voluptatum accusamus tempore non velit odio cum? Fugit tenetur repellendus eum, quis ullam vero sunt. Nihil.
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem vero suscipit fugit quisquam recusandae quae, br br necessitatibus dolorum dignissimos nisi! Eum modi iure iusto aliquid facilis nobis maxime officia quo. <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem nobis ad dolore adipisci doloribus molestiae numquam qui debitis exercitationem reprehenderit voluptas, alias magnam maiores tempora cum. Sequi, nostrum aut? <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, adipisci quae quia illum voluptatum accusamus tempore non velit odio cum? Fugit tenetur repellendus eum, quis ullam vero sunt. Nihil.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem vero suscipit fugit quisquam recusandae quae, br br necessitatibus dolorum dignissimos nisi! Eum modi iure iusto aliquid facilis nobis maxime officia quo. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem nobis ad dolore adipisci doloribus molestiae numquam qui debitis exercitationem reprehenderit voluptas, alias magnam maiores tempora cum. Sequi, nostrum aut? <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, adipisci quae quia illum voluptatum accusamus tempore non velit odio cum? Fugit tenetur repellendus eum, quis ullam vero sunt. Nihil.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem vero suscipit fugit quisquam recusandae quae, br br necessitatibus dolorum dignissimos nisi! Eum modi iure iusto aliquid facilis nobis maxime officia quo. <br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem nobis ad dolore adipisci doloribus molestiae numquam qui debitis exercitationem reprehenderit voluptas, alias magnam maiores tempora cum. Sequi, nostrum aut? <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, adipisci quae quia illum voluptatum accusamus tempore non velit odio cum? Fugit tenetur repellendus eum, quis ullam vero sunt. Nihil.
+</body>
+</html>
